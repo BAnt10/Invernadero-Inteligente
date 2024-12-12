@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header .objetivo {
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    border-color: #4CAF50;
+}
+
+.image-container2 {
+    position: relative;
+    width: 48%;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-container2 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-container2:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-container2 img:hover {
+    transform: scale(1.05);
+    border-color: #4CAF50;
+}
+
+.rights-reserved {
+    margin-top: 40px;
+}
+
+.rights-reserved p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.rights-reserved ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rights-reserved ul li {
+    margin-bottom: 5px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logos img {
+    max-width: 20%;
+    height: auto;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #555;
+}
